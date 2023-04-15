@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div id="calculator">
+      <form>
+        <input id="result" type="text" placeholder="0" disabled />
+        <div id="buttons">
+          <input type="button" value="1" onclick="addNumberToTextView('1')" />
+          <input type="button" value="2" onclick="addNumberToTextView('2')" />
+          <input type="button" value="3" onclick="addNumberToTextView('3')" />
+          <input type="button" value="+" onclick="addNumberToTextView('+')" />
+          <input type="button" value="4" onclick="addNumberToTextView('4')" />
+          <input type="button" value="5" onclick="addNumberToTextView('5')" />
+          <input type="button" value="6" onclick="addNumberToTextView('6')" />
+          <input type="button" value="-" onclick="addNumberToTextView('-')" />
+          <input type="button" value="7" onclick="addNumberToTextView('7')" />
+          <input type="button" value="8" onclick="addNumberToTextView('8')" />
+          <input type="button" value="9" onclick="addNumberToTextView('9')" />
+          <input type="button" value="*" onclick="addNumberToTextView('*')" />
+          <input type="button" value="C" onclick="clearTextView()" />
+          <input type="button" value="0" onclick="addNumberToTextView('0')" />
+          <input type="button" value="=" onclick="calculateResult()" />
+          <input type="button" value="/" onclick="addNumberToTextView('/')" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
